@@ -118,3 +118,28 @@ details p { margin-top: .5rem; }
 
 /* ====== FOOTER ====== */
 footer { font-size: .75rem; opacity: .7; margin-top: auto; }
+
+
+/* ========= MOBILE POLISH ========= */
+@media (max-width: 480px) {
+  /* 1. Slightly smaller base font for cramped screens */
+  :root { font-size: 15px; }
+
+  /* 2. Card hugs the edges a bit more */
+  main { padding: 1.5rem .5rem; }
+  .card { padding: 1.5rem 1.25rem; width: 100%; max-width: 100%; }
+
+  /* 3. Make buttons fill width so they’re easy to tap */
+  button,
+  .primary,
+  .secondary {
+    width: 100%;
+    text-align: center;
+  }
+
+  /* 4. Form grid collapses nicely already (auto-fit), but
+        force single column so labels don’t crowd */
+  .grid-form {
+    grid-template-columns: 1fr;
+  }
+}
