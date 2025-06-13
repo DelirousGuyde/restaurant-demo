@@ -1,0 +1,13 @@
+[[source]]
+name = "pypi"
+url = "https://pypi.org/simple"
+verify_ssl = true
+
+[packages]
+flask = "==2.3.3"
+twilio = "==8.10.0"
+
+[dev-packages]
+
+[requires]
+python_version = "3.11"

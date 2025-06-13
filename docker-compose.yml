@@ -1,0 +1,7 @@
+version: "3.9"
+
+services:
+  restaurant-demo:
+    build: .
+    ports:
+      - "5001:5000"
