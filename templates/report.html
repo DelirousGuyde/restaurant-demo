@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% block content %}
+<section class="card report">
+  <h2>Daily Sales Report</h2>
+  <p class="date">{{ today }}</p>
+  <ul>
+    <li>Total Reservations <span>47</span></li>
+    <li>Revenue <span>$4,235</span></li>
+    <li>Top Server <span>Maria ($892)</span></li>
+    <li>Busiest Hour <span>7 – 8 PM</span></li>
+  </ul>
+  <p class="tag">This report is automatically emailed to owners every night at 11 PM</p>
+</section>
+{% endblock %}

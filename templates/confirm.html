@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% block content %}
+<section class="card success">
+  <h2>Reservation Confirmed!</h2>
+  <p>{{ message }}</p>
+  <p class="tag">SMS confirmation sent to {{ phone }}</p>
+  <details>
+    <summary>What happens next?</summary>
+    <p>This is a demo. In production we’d call Twilio’s API to send the SMS automatically.</p>
+  </details>
+  <a href="{{ url_for('reservation_form') }}" class="secondary">&larr; New reservation</a>
+</section>
+{% endblock %}

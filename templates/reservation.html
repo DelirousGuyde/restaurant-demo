@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% block content %}
+<section class="card">
+  <h2>Reserve Your Table</h2>
+  <form action="{{ url_for('confirm') }}" method="POST" class="grid-form">
+    <label>Name <input name="name" required /></label>
+    <label>Phone <input name="phone" required /></label>
+    <label>Date <input type="date" name="date" required /></label>
+    <label>Time
+      <select name="time" required>
+        <option>5:00 PM</option>
+        <option>6:30 PM</option>
+        <option>8:00 PM</option>
+      </select>
+    </label>
+    <label>Party Size <input type="number" name="size" min="1" value="2" required /></label>
+
+    <button class="primary">Reserve Table</button>
+  </form>
+</section>
+{% endblock %}
